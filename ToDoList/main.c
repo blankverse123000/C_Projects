@@ -16,7 +16,7 @@ int main()
         printf("-----------------4. Delete Task         -----------------\n");
         printf("-----------------5. Exit                -----------------\n");
         printf("----------------------------------------------------------\n");
-        printf("Enter your choice :");
+        printf("Enter your choice number :");
         scanf("%d", &choice);
         getchar();
 

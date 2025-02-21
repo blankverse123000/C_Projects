@@ -57,14 +57,13 @@ void viewTasks()
         printf("No tasks found.\n");
         return;
     }
-    printf("\n************************************************\n");
-    printf("\n          **  TASK LIST  **          \n");
-    printf("\nID            completion             Task\n");
-    for (int i = 0; i < count; i++)
+    printf("\n******************************************************\n");
+    printf("\n***************      Task  List        ***************\n");
+    printf("\nNo.     Id              Completion                   Job\n");
+    for(int i=0;i<count;i++)
     {
-        printf("%d             [%s]             %s\n", tasks[i].id, tasks[i].completed ? "Done" : "Todo", tasks[i].description);
+    printf("\n%d       %d               %s                   %s\n",i+1,tasks[i].id,tasks[i].completed? "done":"todo",tasks[i].description);
     }
-    printf("\n************************************************\n");
 }
 
 void markTaskAsDone()
